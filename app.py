@@ -21,7 +21,7 @@ if st.button("Generate Storyboard") and hf_token and user_input:
             response = client.chat_completion(
                 model="Qwen/Qwen2.5-72B-Instruct", 
                 messages=messages, 
-                max_tokens=500
+                max_tokens=5000
             )
             
             st.success("Storyboard Generated!")
